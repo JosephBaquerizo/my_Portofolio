@@ -6,18 +6,22 @@ import StartText from "./components/StartText";
 import StartPicture from "./components/StartPicture";
 import ProgressBars from "./components/ProgressBars";
 import Project from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
 
   return (
     <div className="mainContainer">
-      <div className="topContainer">
+      <div id="Inicio" className="topContainer">
         <Logo/>
         <NavigationBar/>
       </div>
       <div className="start">
-        <StartText/>
-        <StartPicture/>
+        <div className="itemContainer">
+          <StartText/>
+          <StartPicture/>
+        </div>
       </div>
       <div className="abilities">
         <ProgressBars/>
@@ -25,7 +29,13 @@ const App = () => {
       <div className="proyects">
         <Project/>
       </div>
-      <div className="contact">
+      <div id="Contacto" className="contactC">
+        <Contact/>
+      </div>
+      <div class="upFooter">
+        <div className="footer">
+          <Footer/>
+        </div>
       </div>
     </div>
   );

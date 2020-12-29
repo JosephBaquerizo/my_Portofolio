@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -48,22 +52,31 @@
   border-bottom-color: black;
   border-bottom-width: 1px;
   border-bottom-style: groove;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 }
 
 .start {
   display: flex;
+  justify-content: center;
+}
+
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 13rem;
-  padding-right: 13rem;
 }
 
 .textContainer {
   margin-top: 6rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 4rem;
   color:#495464;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 2rem;
@@ -73,12 +86,14 @@
 
 .subtitle {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 25px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .cvButton {
   background-color: #BBBFCA;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: white;
   height: 4rem;
   border-radius: 8px;
@@ -94,12 +109,14 @@
 }
 
 .startPic {
-  height: 30rem;
-  width: 30rem;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .picContainer {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .mainContainer {
@@ -120,7 +137,7 @@
 
 .progressContainer {
   margin-top: 8rem;
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: center;
   border-style: solid;
@@ -129,12 +146,13 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .barContainer {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -165,6 +183,8 @@
   margin-left: 3rem;
   margin-right: 3rem;
   align-items: center;
+  border-radius: 7px;
+  margin-bottom: 3rem;
 }
 
 .projectContainer {
@@ -176,11 +196,14 @@
 
 .projectTitleContainer {
   margin-bottom: 3rem;
+  border-radius: 5px;
 }
 
 .cardContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .pokecheckImg {
@@ -189,8 +212,56 @@
   border-bottom-style: solid;
   border-bottom-color: black;
   border-bottom-width: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .projectTitle {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contactC {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 60%;
+  height: 8rem;
+  background-color: white;
+  border-top-style: solid;
+  border-top-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.foot {
+  height: 3rem;
+  width: 3rem;
+  background-color:white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.upFooter {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+
+  .topContainer{
+      position: static;
+      
+  }
 }

@@ -19,7 +19,7 @@ const ProgressBars = () => {
                     <ProgressBar className="bar" bgcolor={"#1F3C88"} completed={90}/>
                     <img alt="3" className="iconBar" src={js}/>
                     <ProgressBar className="bar" bgcolor={"#FFE05D"} completed={75}/>
-                    <img alt="4" className="iconBar" src={react}/>
+                    <img id="Proyectos" alt="4" className="iconBar" src={react}/>
                     <ProgressBar className="bar" bgcolor={"#2D6187"} completed={85}/>
                     <img alt="5" className="iconBar" src={python}/>
                     <ProgressBar className="bar" bgcolor={"green"} completed={65}/>

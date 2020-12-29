@@ -1,17 +1,37 @@
 import React from "react";
+import "../NavBar.css";
+import imgBurger from "../assets/burger.png";
 
 const NavigationBar = () => {
+
+    const navSlide = () => {
+        const burger = document.querySelector(".burgerPic");
+        let nav = document.querySelector(".nav-links");
+        nav.classList.toggle("nav-active");
+        
+    }
+
     return (
         <div class="navBarContainer">
-            <div className="navbar">
-                <a className="item">Inicio</a>
-                <a className="item sep">|</a>
-                <a className="item">Habilidades</a>
-                <a className="item sep">|</a>
-                <a className="item">Proyectos</a>
-                <a className="item sep">|</a>
-                <a className="item">Contacto</a>
-            </div>
+            <nav>
+                <ul className="nav-links">
+                    <li>
+                        <a href="#Inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#Habilidades">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#Proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div className="menu">
+                    <img onClick={navSlide} id="1"className="burgerPic" src={imgBurger}/>
+                </div>
+            </nav>
         </div>
     );
 }
