@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+}
+
+.logoContainer {
+  height: 8rem;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoName {
+  border-width: 2px;
+  border-style: solid;
+  padding: 2px;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+.navBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.item {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.sep {
+  font-size: 18px;
+}
+
+.topContainer {
+  padding-bottom: 1rem;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: groove;
+}
+
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.textContainer {
+  margin-top: 6rem;
+}
+
+.title {
+  font-size: 5rem;
+  color:#495464;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 2rem;
+  padding-bottom:0;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cvButton {
+  background-color: #BBBFCA;
+  color: white;
+  height: 4rem;
+  border-radius: 8px;
+  border-style: unset;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.cvButton:hover {
+  background-color: #495464;
+  cursor: pointer;
+}
+
+.startPic {
+  height: 30rem;
+  width: 30rem;
+}
+
+.picContainer {
+  margin-top: 4rem;
+}
+
+.mainContainer {
+  border-style: solid;
+  border-width: 2rem;
+  border-color: black;
+}
+
+.abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidades {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.progressContainer {
+  margin-top: 8rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 8px;
+  border-color:#495464;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.barContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconBar {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.bar {
+  margin-bottom: 10px;
+}
+
+.proyects {
+  margin-top: 4rem;
+  margin-bottom: 4rem
+}
+
+.projectCard {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px; 
+  width: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  align-items: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTitleContainer {
+  margin-bottom: 3rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.pokecheckImg {
+  height: 35rem;
+  width: 18rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
+
+.projectTitle {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
