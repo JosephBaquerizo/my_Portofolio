@@ -41,7 +41,7 @@ class Contact extends Component {
 		}
 		if ((name.value!=='') && (this.validateEmail(email.value)) && (message.value!=='')) {
 			console.log('cumple todos los parametros');
-			window.alert('Your message was submitted successfully!')
+			window.alert('Tu mensaje fue enviado correctamente!')
 			/*let templateParams = { from_name: name.value,
     						   to_name: 'Joseph',
     						   message_html: message.value

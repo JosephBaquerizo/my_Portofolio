@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import './App.css';
 import Logo from "./components/Logo";
 import NavigationBar from "./components/NavigationBar";
@@ -29,7 +28,7 @@ const App = () => {
       <div className="proyects">
         <Project/>
       </div>
-      <div id="Contacto" className="contactC">
+      <div className="contactC">
         <Contact/>
       </div>
       <div class="upFooter">

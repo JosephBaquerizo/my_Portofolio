@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
@@ -48,6 +50,9 @@ html{
 }
 
 .topContainer {
+  border-top-width: 2rem;
+  border-top-style: solid;
+  border-top-color: black;
   padding-bottom: 1rem;
   border-bottom-color: black;
   border-bottom-width: 1px;
@@ -71,14 +76,14 @@ html{
 
 .textContainer {
   margin-top: 6rem;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 
 .title {
   font-size: 4rem;
   color:#495464;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
   margin-top: 2rem;
   padding-bottom:0;
   margin-bottom: 1rem;
@@ -87,11 +92,11 @@ html{
 .subtitle {
   margin-top: 0;
   font-size: 25px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .cvButton {
-  background-color: #BBBFCA;
+  background-color: #495464;
   padding-left: 1rem;
   padding-right: 1rem;
   color: white;
@@ -104,15 +109,15 @@ html{
 }
 
 .cvButton:hover {
-  background-color: #495464;
+  background-color: #BBBFCA;
   cursor: pointer;
 }
 
 .startPic {
   height: 20rem;
   width: 20rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .picContainer {
@@ -120,9 +125,15 @@ html{
 }
 
 .mainContainer {
-  border-style: solid;
-  border-width: 2rem;
-  border-color: black;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-width: 2rem;
+  border-right-width: 2rem;
+  border-bottom-width: 2rem;
+  border-left-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
 }
 
 .abilities {
@@ -132,21 +143,21 @@ html{
 }
 
 .habilidades {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .progressContainer {
   margin-top: 8rem;
-  width: 60%;
+  width: 48%;
   display: flex;
   justify-content: center;
   border-style: solid;
-  border-width: 8px;
-  border-color:#495464;
+  border-width: 2px;
+  border-color:black;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
-  border-radius: 10px;
+  box-shadow: 6px 6px;
 }
 
 .barContainer {
@@ -183,8 +194,8 @@ html{
   margin-left: 3rem;
   margin-right: 3rem;
   align-items: center;
-  border-radius: 7px;
   margin-bottom: 3rem;
+  box-shadow: 2px 2px;
 }
 
 .projectContainer {
@@ -206,18 +217,20 @@ html{
   justify-content: center;
 }
 
+.cardTitle {
+  font-family: 'Barlow', sans-serif;
+}
+
 .pokecheckImg {
   height: 35rem;
   width: 18rem;
   border-bottom-style: solid;
   border-bottom-color: black;
   border-bottom-width: 2px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .projectTitle {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .contactC {
@@ -251,6 +264,11 @@ html{
   margin-right: 3rem;
   padding-top: 1rem;
   cursor: pointer;
+  transition: transform .2s;
+}
+
+.foot:hover {
+  transform: scale(1.2);
 }
 
 .upFooter {
@@ -258,10 +276,3 @@ html{
   justify-content: center;
 }
 
-@media screen and (max-width:768px) {
-
-  .topContainer{
-      position: static;
-      
-  }
-}

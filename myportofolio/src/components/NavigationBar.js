@@ -5,31 +5,30 @@ import imgBurger from "../assets/burger.png";
 const NavigationBar = () => {
 
     const navSlide = () => {
-        const burger = document.querySelector(".burgerPic");
         let nav = document.querySelector(".nav-links");
         nav.classList.toggle("nav-active");
         
     }
 
     return (
-        <div class="navBarContainer">
+        <div className="navBarContainer">
             <nav>
                 <ul className="nav-links">
                     <li>
-                        <a href="#Inicio">Inicio</a>
+                        <a className="nav-op" href="#Inicio">Inicio</a>
                     </li>
                     <li>
-                        <a href="#Habilidades">Habilidades</a>
+                        <a className="nav-op" href="#Habilidades">Habilidades</a>
                     </li>
                     <li>
-                        <a href="#Proyectos">Proyectos</a>
+                        <a className="nav-op" href="#Proyectos">Proyectos</a>
                     </li>
                     <li>
-                        <a href="#Contacto">Contacto</a>
+                        <a className="nav-op" href="#Contacto">Contacto</a>
                     </li>
                 </ul>
                 <div className="menu">
-                    <img onClick={navSlide} id="1"className="burgerPic" src={imgBurger}/>
+                    <img onClick={navSlide} alt="1" className="burgerPic" src={imgBurger}/>
                 </div>
             </nav>
         </div>

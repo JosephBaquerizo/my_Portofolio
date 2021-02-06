@@ -18,7 +18,7 @@ const Project = () => {
                 </div>
                 <div className="projectCard">
                     <img className="pokecheckImg" src={image1}/>
-                    <h3 className="cardTitle">Pokécheck App</h3>
+                    <h3 id="Contacto" className="cardTitle">Pokécheck App</h3>
                 </div>
             </div>
         </div>
